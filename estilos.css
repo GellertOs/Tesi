@@ -1,0 +1,33 @@
+body{
+	background-image:url(imagenes/blanco.png);
+	background-size: 100vw 100vh;
+	background-attachment: fixed;
+	margin: 0;
+
+}
+
+form{
+
+	margin: auto;
+	background: rgba(0,0,0,0.4);
+	padding: 10px 20px;
+	box-sizing: border-box;
+
+}
+ #alert{
+    width: 250px;
+    padding: 5px;
+    background-color: #C0C0C0;
+    color: red;
+       display: none;
+}
+
+.sidebar {
+				background: #eee;
+			}
+
+			.container{
+				background: #eee;
+			}
+
+			

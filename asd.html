@@ -1,0 +1,18 @@
+<?php
+if($_POST){
+if(file_exists("Carpeta/".$_FILES[ "archivo" ][ "name" ])){
+echo "Este archivo ya existe";
+}else{
+$destino = "Carpeta/";
+move_uploaded_file($_FILES[ "archivo" ][ "tmp_name" ], $destino.$_FILES[ "archivo" ][ "name" ]);
+echo $_POST["mensaje"];
+}
+}
+?>
+<form method="POST" action="<?=$_SERVER['PHP_SELF']?>" enctype="multipart/form-data">
+Subir archivo:<input type="file" name="archivo" size="35">
+
+<input type="hidden" name="mensaje" value="Archivo subido satisfactoriamente" />
+<input type="button" value="Subir" onClick="submit()" />
+<p align="center"><a href="index2.php">SALIR</a></p>
+</form> 
